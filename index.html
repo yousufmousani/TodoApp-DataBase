@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <Style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        body{
+            margin: 80px;
+            /* margin-left: 600px; */
+            display: flex;
+            justify-content: center;
+            background:linear-gradient(rgb(25, 25, 178),rgb(4, 62, 81));
+        /* margin-left: 100px; */
+            /* padding: 0; */
+        }
+
+        .container{
+            border-radius: 10px;
+            width: 380px;
+            height: 530px;
+            margin-top: 1px;
+            text-align: center;
+            background-color: white;
+
+        }
+h2{
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+    border-radius: 10px;
+    width: 120px;
+    background: linear-gradient(blue,rgb(4, 62, 81));
+    color: white;
+    font-size: medium;
+    font-family:sans-serif;
+    
+}
+
+#button{
+    display: inline-block;
+    border-radius: 10px;
+    width: 320px;
+    background: linear-gradient(blue,rgb(4, 62, 81));
+    color: white;
+}
+
+#email,#password,#username{
+    width: 330px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: -4px ;
+}
+a{
+    margin-right:190px;
+    text-decoration: none;
+    color: blue;
+}
+h4{
+    width: 200px;
+    display: inline-block;
+}
+h4{
+    width: 500px;
+}
+
+
+
+    </Style>
+</head>
+<body>
+    <div class="container">
+    <h2>SignUp Form</h2>
+
+    <button>SingUp</button><button>Login</button>
+    <br><br>
+    <form id="form">
+    <input type="text" placeholder="User Name" id="username">
+    <br>
+    <input type="text" placeholder="Email Address" id="email">
+    <br>
+    <input type="text" placeholder="Password" id="password">
+    <br><br>
+    <a href="#">Forgot Password?</a>
+    <br><br>
+    <button id="button">Login</button>
+</form>
+    
+    <h4>Already have your Account<a id="h4" href="./login.html">Login</a></h4>
+    
+</div>
+<script type="module" src="index.js"></script>
+</body>
+</html>

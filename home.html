@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+
+.body{
+    background :linear-gradient(rgb(11, 11, 122),black) ;
+}
+           #logout-btn{
+            margin-bottom: 1000px;
+            display: flex;
+            float: right;
+           } 
+        .color{
+            background:linear-gradient(rgb(80, 3, 75),black) ;
+        }
+        /* .color2{
+            background: black;
+        } */
+            
+        .ul{
+            color: white;
+            /* background :linear-gradient(rgb(19, 19, 158),black) ; */
+            background :linear-gradient(rgb(11, 11, 122),black);
+            width: 640px;
+            display: inline-flex;
+            justify-content: center;
+            list-style-type: none;
+            text-align: justify;
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            font-size: 19px;
+            margin: auto;
+            
+        }
+        li{
+          display: inline-block;  
+        }
+        
+        h2{
+            text-align: center;
+        }
+        /* button{
+            text-align: center;
+        } */
+        .todo{
+            text-align: center;
+            width: 640;
+            
+        }
+        #getinp{
+            display: inline-block;
+            width: 250px;
+        }
+        .logout{
+            color: white;
+            background:linear-gradient(rgb(11, 11, 122),rgb(48, 46, 46));
+        }
+        .cc{
+            color: white;
+            background:linear-gradient(rgb(11, 11, 122),rgb(48, 46, 46));
+            display: flex;
+            float: left;
+            /* border-radius: 10px; */
+           } 
+           .change{
+            color: white;
+            background :linear-gradient(rgb(80, 3, 75),black);
+            width: 640px;
+            display: inline-flex;
+            justify-content: center;
+            list-style-type: none;
+            text-align: justify;
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            font-size: 50x;
+            margin: auto;
+           }
+        
+           @media only screen and (max-width: 480px) {
+  .ul{
+    margin-left: center;
+    margin-left: 45px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .todo{
+    margin-left:50px;
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+.border{
+           color: white;
+            background :linear-gradient(rgb(80, 3, 75),black);
+}
+
+    </style>
+    
+</head>
+<body class="body">
+    
+   
+    <!-- <h1>Welcome</h1> -->
+    <button id="logout-btn" class="logout">Logout</button>
+    <button class="cc">Color</button>
+<h2 style="color: white;">TODO APP</h2>
+<div class="todo">
+    <input type="text" name="" id="getinp">
+    <button onclick="addtodo()">Add Todo</button>
+    <button onclick="deleteall()">Delete All</button>
+</div>
+<br><br><br>
+    <ul class="ul"> 
+    </ul>
+    
+   
+    <script type="module" src="home.js"></script>
+</body>
+</html>
